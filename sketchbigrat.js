@@ -12,28 +12,11 @@ function preload() {
   song = loadSound("/assets/monkeys.mp3");
 
   //load all sounds
-  sounds[0] = loadSound("/assets/sounds/sound1.mp3");
-  sounds[1] = loadSound("/assets/sounds/sound2.mp3");
-  sounds[2] = loadSound("/assets/sounds/sound3.mp3");
-  sounds[3] = loadSound("/assets/sounds/sound4.mp3");
-  sounds[4] = loadSound("/assets/sounds/sound5.mp3");
-  sounds[5] = loadSound("/assets/sounds/sound6.mp3");
-  sounds[6] = loadSound("/assets/sounds/sound7.mp3");
-  sounds[7] = loadSound("/assets/sounds/sound8.mp3");
-  sounds[8] = loadSound("/assets/sounds/sound9.mp3");
-  sounds[9] = loadSound("/assets/sounds/sound10.mp3");
-  sounds[10] = loadSound("/assets/sounds/sound11.mp3");
-  sounds[11] = loadSound("/assets/sounds/sound12.mp3");
-  sounds[12] = loadSound("/assets/sounds/sound13.mp3");
-  sounds[13] = loadSound("/assets/sounds/sound14.mp3");
-  sounds[14] = loadSound("/assets/sounds/sound15.mp3");
-  sounds[15] = loadSound("/assets/sounds/sound16.mp3");
-  sounds[16] = loadSound("/assets/sounds/sound17.mp3");
-  sounds[17] = loadSound("/assets/sounds/sound18.mp3");
-  sounds[18] = loadSound("/assets/sounds/sound19.mp3");
-  sounds[19] = loadSound("/assets/sounds/sound20.mp3");
-  sounds[20] = loadSound("/assets/sounds/sound21.mp3");
-  sounds[21] = loadSound("/assets/sounds/sound22.mp3");
+  let i = 0;
+  while (i < 22) {
+    sounds[i] = loadSound(`/assets/sounds/sound${i + 1}.mp3`);
+    i++;
+  }
 }
 
 function setup() {
