@@ -13,7 +13,7 @@ function preload() {
 
   //load all sounds
   let i = 0;
-  while (i < 22) {
+  while (i < 23) {
     sounds[i] = loadSound(`/assets/sounds/sound${i + 1}.mp3`);
     i++;
   }
@@ -46,21 +46,21 @@ function mouseDragged() {
 }
 
 function mouseClicked() {
-  let num = Math.floor(Math.random() * 22);
+  let num = Math.floor(Math.random() * 23);
   sounds[num].play();
   randomColor(0);
   randomColor(1);
 }
 
 function keyPressed() {
-  let num = Math.floor(Math.random() * 22);
+  let num = Math.floor(Math.random() * 23);
   sounds[num].play();
   randomColor(1);
   randomColor(0);
 }
 
 function touchEnded() {
-  let num = Math.floor(Math.random() * 22);
+  let num = Math.floor(Math.random() * 23);
   sounds[num].play();
   randomColor(1);
   randomColor(0);
