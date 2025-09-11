@@ -77,6 +77,14 @@ function keyPressed() {
   randomColor(0);
 }
 
+function touchEnded() {
+  let num = Math.floor(Math.random() * 21);
+  console.log(num);
+  sounds[num].play();
+  randomColor(1);
+  randomColor(0);
+}
+
 function randomColor(l) {
   let letters = [
     "0",
