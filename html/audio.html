@@ -6,16 +6,22 @@
 
     <title>Rats^2</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
 
-    <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
+    <script src="../libraries/p5.min.js"></script>
+    <script src="../libraries/p5.sound.min.js"></script>
   </head>
 
   <body>
-    <h1>Pick an experience.</h1>
     <button id="bigratButton" onclick="bigratOn()">Big Rat Coloring</button>
-    <button id="audioButton" onclick="audioOn()">Rat Audio</button>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p>The more right your mouse, the faster the audio and vice versa.</p>
+    <script src="../audio.js"></script>
   </body>
 </html>
 
@@ -24,12 +30,6 @@
     let button = document.getElementById("bigratButton");
     button.addEventListener("click", function () {
       window.location.href = "/html/rat.html";
-    });
-  }
-  function audioOn() {
-    let button = document.getElementById("audioButton");
-    button.addEventListener("click", function () {
-      window.location.href = "/html/audio.html";
     });
   }
 </script>
