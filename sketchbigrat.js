@@ -71,7 +71,6 @@ function mouseClicked() {
 
 function keyPressed() {
   let num = Math.floor(Math.random() * 21);
-  console.log(num);
   sounds[num].play();
   randomColor(1);
   randomColor(0);
@@ -79,7 +78,6 @@ function keyPressed() {
 
 function touchEnded() {
   let num = Math.floor(Math.random() * 21);
-  console.log(num);
   sounds[num].play();
   randomColor(1);
   randomColor(0);
