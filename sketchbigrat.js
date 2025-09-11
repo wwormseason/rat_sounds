@@ -46,21 +46,21 @@ function mouseDragged() {
 }
 
 function mouseClicked() {
-  let num = Math.floor(Math.random() * 21);
+  let num = Math.floor(Math.random() * 22);
   sounds[num].play();
   randomColor(0);
   randomColor(1);
 }
 
 function keyPressed() {
-  let num = Math.floor(Math.random() * 21);
+  let num = Math.floor(Math.random() * 22);
   sounds[num].play();
   randomColor(1);
   randomColor(0);
 }
 
 function touchEnded() {
-  let num = Math.floor(Math.random() * 21);
+  let num = Math.floor(Math.random() * 22);
   sounds[num].play();
   randomColor(1);
   randomColor(0);
